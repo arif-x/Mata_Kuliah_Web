@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="nav">		
+		<a href="nilai.html">PREDIKAT NILAI</a>
+		<a class="active">KALKULATOR</a>
+	</div>
+	<div id="kalkulator">
+		<div class="container">
+			<u><h1 class="text-center">KALKULATOR</h1></u>
+			<div class="row">
+				<div class="col-6">
+					<label>Field 1</label>
+					<input type="number" id="input1" name="input1">	
+				</div>
+				<div class="col-6">
+					<label>Field 2</label>
+					<input type="number" id="input2" name="input2">
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-3">
+					<button type="submit" class="btn btn-green full-width" value="Tambah" onClick=tambah()>Tambah</button>		
+				</div>
+				<div class="col-3">
+					<button type="submit" class="btn btn-green full-width" value="Kurang" onClick=kurang()>Kurang</button>
+				</div>
+				<div class="col-3">
+					<button type="submit" class="btn btn-green full-width" value="Kali" onClick=kali()>Kali</button>
+				</div>
+				<div class="col-3">
+					<button type="submit" class="btn btn-green full-width" value="Bagi" onClick=bagi()>Bagi</button>
+				</div>
+			</div>
+			<div class="col-12">
+				<button type="submit" class="btn btn-green full-width" value="Semua" onClick=getAll()>Semua</button>
+			</div>
+			<div class="text-center">
+				<p id="hasilTambah"></p>
+				<p id="hasilKurang"></p>
+				<p id="hasilKali"></p>
+				<p id="hasilBagi"></p>
+				<p id="modified"></p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="nav">		
+		<a class="active">KALKULATOR</a>
+		<a href="form.html">FORM</a>		
+	</div>
+	<div id="kalkulator">
+		<div class="container">
+			<u><h1 class="text-center">KALKULATOR</h1></u>
+			<form method="POST" action="kalkulator.php">
+			<div class="row">
+				<div class="col-5">
+					<label>Field 1</label>
+					<input type="number" id="input1" name="input1">	
+				</div>
+				<div class="col-2">
+					<label>Operator</label>
+					<select name="operator" style="width: 100%; border-radius: 5px; padding: 5px 16px;">
+						<option selected="false">Pilih</option>
+						<option value="+">+</option>
+						<option value="-">-</option>
+						<option value="*">*</option>
+						<option value="/">/</option>
+						<option value="%">%</option>
+					</select>
+				</div>
+				<div class="col-5">
+					<label>Field 2</label>
+					<input type="number" id="input2" name="input2">
+				</div>
+			</div>
+			<div class="col-12">
+				<button type="submit" class="btn btn-green full-width" value="Hasil">Dapatkan Hasil</button>
+			</div>	
+			</form>
+		</div>
+	</div>
+</body>
+</html>

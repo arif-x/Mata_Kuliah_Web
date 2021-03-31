@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="nav">
+    <a class="active">KALKULATOR</a>
+    <a href="customCalc.html">KALKULATOR CUSTOM</a>
+  </div>
+  <div id="kalkulator">
+    <u><h1 class="text-center">KALKULATOR</h1></u>
+    <div class="container">
+      <div class="col-12">
+        <form method="GET" id="formCalc" action="">
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6">
+                <input type="number" name="req1">
+              </div>
+              <div class="col-6">
+                <input type="number" name="req2">
+              </div>
+            </div>              
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-3">
+                <button type="submit" class="btn btn-green full-width" onClick="tambah()">Tambah</button>
+              </div>
+              <div class="col-3">
+                <button type="submit" class="btn btn-green full-width" onClick="kurang()">Kurang</button>
+              </div>
+              <div class="col-3">
+                <button type="submit" class="btn btn-green full-width" onClick="kali()">Kali</button>
+              </div>
+              <div class="col-3">
+                <button type="submit" class="btn btn-green full-width" onClick="bagi()">Bagi</button>
+              </div>              
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="row">
+              <div class="col-6">
+                <button type="submit" class="btn btn-green full-width" onClick="modulus()">Modulus</button>
+              </div>
+              <div class="col-6">
+                <button type="submit" class="btn btn-green full-width" onClick="getAll()">All</button>  
+              </div>              
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>  
+
+  <script type="text/javascript">
+    function tambah(){
+      document.getElementById("formCalc").action = "tambah.php";
+    }
+
+    function kurang(){
+      document.getElementById("formCalc").action = "kurang.php";
+    }
+
+    function kali(){
+      document.getElementById("formCalc").action = "kali.php";
+    }
+
+    function bagi(){
+      document.getElementById("formCalc").action = "bagi.php";
+    }
+
+    function modulus(){
+      document.getElementById("formCalc").action = "modulus.php";
+    }
+
+    function getAll(){
+      document.getElementById("formCalc").action = "getAll.php";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="nav">
+    <a class="active">KALKULATOR CUSTOM</a>
+    <a href="calc.html">KALKULATOR</a>    
+  </div>
+  <div id="custom">
+    <u><h1 class="text-center">KALKULATOR CUSTOM</h1></u>
+    <div class="container">
+      <form method="GET" id="formCalc" action="">
+        <div class="col-12">
+          <label>Variabel A</label>
+          <input type="number" name="a">
+        </div>
+        <div class="col-12">
+          <label>Variabel B</label>
+          <input type="number" name="b">
+        </div>
+        <div class="col-12">
+          <label>Variabel C</label>
+          <input type="number" name="c">
+        </div>
+        <div class="col-12">
+          <label>Variabel D</label>
+          <input type="number" name="d">
+        </div>
+        <div class="col-12">
+          <label>Variabel E</label>
+          <input type="number" name="e">
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-green full-width" onClick="getAll()">Tambah</button>
+        </div>    
+      </form>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    function getAll(){
+      document.getElementById("formCalc").action = "getCustom.php";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Biodata</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="nav">
+		<a href="index.html">INDEX</a>
+		<a href="persegi.html">PERSEGI</a>
+		<a class="active">BIODATA</a>
+		<a href="dates.php">DATE FORMAT</a>	
+	</div>
+	<div style="padding-top: 50px">
+		<u><h1 class="text-center">BIODATA</h1></u>
+		<div class="container">
+			<div class="col-12">
+				<form method="POST" action="biodata.php">
+					<div class="col-12">
+						<div class="row">
+							<div class="col-6">
+								<label>Nama</label>
+								<input type="text" name="nama">
+							</div>
+							<div class="col-6">
+								<label>Alamat</label>
+								<input type="text" name="alamat">
+							</div>
+						</div>              
+					</div>
+					<div class="col-12">
+						<div class="row">
+							<div class="col-6">
+								<label>Tempat Lahir</label>
+								<input type="text" name="tempatLahir">
+							</div>
+							<div class="col-6">
+								<label>Tanggal Lahir</label>
+								<input type="date" name="tanggalLahir">								
+							</div>
+						</div>              
+					</div>
+					<div class="col-12">
+						<div class="row">
+							<div class="col-6">
+								<label>Pekerjaan</label>
+								<input type="text" name="pekerjaan">
+							</div>
+							<div class="col-6">
+								<label>Instansi</label>
+								<input type="text" name="instansi">
+							</div>
+						</div>              
+					</div>
+					<div class="col-12">
+						<div class="row">
+							<div class="col-6">
+								<label>Agama</label>
+								<input type="text" name="agama">
+							</div>
+							<div class="col-6">
+								<label>Status Pernikahan</label>
+								<select name="statusPernikahan" style="width: 100%; border-radius: 5px; padding: 5px 16px;">
+									<option>Pilih</option>
+									<option value="Belum Menikah">Belum Menikah</option>
+									<option value="Menikah">Menikah</option>
+								</select>
+							</div>
+						</div>              
+					</div>
+					<div class="col-12">
+						<button type="submit" class="btn btn-green full-width">Submit</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
